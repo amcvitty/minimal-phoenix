@@ -13,9 +13,9 @@ defmodule PostcodesWeb.Endpoint do
       client: :native,
       domains: ["amcvitty.fairuse.org", "www.amcvitty.fairuse.org"],
       emails: ["andy.mcvitty@gmail.com"],
-      db_folder: Application.get_env(:my_app, :cert_path, "tmp/site_encrypt_db"),
+      db_folder: Application.get_env(:postcodes, :cert_path, "tmp/site_encrypt_db"),
       directory_url:
-        case Application.get_env(:my_app, :cert_mode, "local") do
+        case Application.get_env(:postcodes, :cert_mode, "local") do
           "local" -> {:internal, port: 4002}
           "staging" -> "https://acme-staging-v02.api.letsencrypt.org/directory"
           "production" -> "https://acme-v02.api.letsencrypt.org/directory"

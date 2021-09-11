@@ -22,10 +22,10 @@ config :postcodes, PostcodesWeb.Endpoint,
   ]
 
 # Set path to cert folder
-config :my_app, :cert_path, "/home/andy/site_encrypt_db"
+config :postcodes, :cert_path, "/home/andy/site_encrypt_db"
 
 # Set the cert mode so site_encrypt knows to hit live LetsEncrypt
-config :my_app, :cert_mode, "production"
+config :postcodes, :cert_mode, "production"
 
 # Do not print debug messages in production
 config :logger, level: :info
