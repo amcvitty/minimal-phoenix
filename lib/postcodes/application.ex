@@ -15,7 +15,7 @@ defmodule Postcodes.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Postcodes.PubSub},
       # Start the Endpoint (http/https)
-      PostcodesWeb.Endpoint
+      {SiteEncrypt.Phoenix, PostcodesWeb.Endpoint}
       # Start a worker by calling: Postcodes.Worker.start_link(arg)
       # {Postcodes.Worker, arg}
     ]
